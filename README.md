@@ -81,7 +81,7 @@ make run
 
 **Archives/** : Anciennes versions avant refactor (2026-02-25)
 - `CalculsDouble_modifie.java` : ancienne version du fichier passé par le préprocesseur d'imports
-- `CalculsDouble_modifie.java.backup` : sauvegarde de sécurité
+- `CalculsDouble_modifie.java.backup` : sauvegarde de sécurité (code non refactorisé)
 - `compile.bat` : ancien script batch (remplacé par Makefile)
 - `generate_javadoc.bat` : ancien script batch (remplacé par Makefile)
 - `python3m1.py` : ancienne version du préprocesseur (code non refactorisé)
