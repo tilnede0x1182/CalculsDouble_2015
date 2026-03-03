@@ -16,8 +16,14 @@ make compile
 
 Cette commande :
 1. Lance le préprocesseur Python sur `src/CalculsDouble.java`
-2. Génère `src/CalculsDouble_modifie.java` (fichier consolidé)
+2. Génère `src/CalculsDouble_modifie.java` (fichier passé par le préprocesseur d'imports)
 3. Compile vers `build/`
+
+## Pourquoi le préprocesseur d'imports ?
+
+A l'époque de la création initiale de la librairie (2014) je ne connaisais pas bien les modataliés d'imports de fichiers en java et j'ai créé un préopresseur d'imports en python pour le faire.
+Par la suite je l'ai gardé car je le trouvais intéressant sur le plan du code, mais techniquement, il serait sans doute plus juste de
+refactorer le code pour utiliser les imports standarts de Java... Mais ce n'est pas prévu.
 
 ## Exécution
 
@@ -74,9 +80,9 @@ make run
 **Reconnaissance_expression/** : Contient 2 fichiers mais seul `Reconnaissance_doubles_sans_parentheses.java` est utile. La version `_entiers_` est redondante car la version doubles gère aussi les entiers (un entier est un cas particulier de décimal).
 
 **Archives/** : Anciennes versions avant refactor (2026-02-25)
-- `CalculsDouble_modifie.java` : ancienne version du fichier consolidé
+- `CalculsDouble_modifie.java` : ancienne version du fichier passé par le préprocesseur d'imports
 - `CalculsDouble_modifie.java.backup` : sauvegarde de sécurité
 - `compile.bat` : ancien script batch (remplacé par Makefile)
 - `generate_javadoc.bat` : ancien script batch (remplacé par Makefile)
 - `python3m1.py` : ancienne version du préprocesseur (code non refactorisé)
-- `READ-ME.txt` : instructions de compilation originales
+- `READ-ME.txt` : instructions de compilation initiales
