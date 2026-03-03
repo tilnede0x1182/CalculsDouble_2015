@@ -33,8 +33,6 @@ make javadoc
 
 La documentation est générée dans `javadoc/`.
 
-**Note Windows** : Le dossier `javadoc/` doit être créé manuellement depuis l'explorateur ou PowerShell avant la première exécution.
-
 ## Structure
 
 ```
